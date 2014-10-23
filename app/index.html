@@ -1,0 +1,62 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>hw12</title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="../bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+
+<div class="hero-unit">
+    <div class="welcome">
+      <h3>Choose your Character</h3>
+      <button name="1">Martin Luther King</button>
+      <button name="2">Ghandi</button>
+      <button name="3">Jesus</button>
+    </div>
+    <div class="fight">
+        <div class="arena"></div><!--arena shows here-->
+        <div class="good-area">
+          <p class="ggName"> <span class="ggHealth"></span></p>
+        </div>
+        <div class="bad-area">
+          <p class ="bbName"> <span class="bbHealth"></span></p>
+        </div>
+        <button id="fight">attack <!--fix this later<span class="bbName"></span>--></button>
+    </div>
+    <div class="game-over">
+        <div id="game-over">
+
+          <div class="game-over-message"></div>
+        </div>
+    </div>
+<div><!--end of hero-unit-->
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/underscore/underscore.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
