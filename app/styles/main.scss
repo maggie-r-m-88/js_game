@@ -77,7 +77,8 @@ body {
   height: 400px;
   display: none;
   border-radius: 10px;
-  background-color: black;
+  background-size: cover;
+  background-image: url("/images/shatter.jpg");
 
 
 }
@@ -93,6 +94,9 @@ body {
 .game-over-message{
   font-color: white;
   font-size: 45px;
+  background-color: black;
+  opacity: .75;
+  border-radius: 10px;
   font-family: $mainfont;
   text-align: center;
   width: 80%;
@@ -211,16 +215,7 @@ body {
     margin-left: -10px;
   }
 }
-.blood{
-  display: none;
-  background-image: url("/images/blood.gif");
-  background-size: cover;
-  width: 400px;
-  height: 200px;
-  animation-duration: 1.2s;
-  animation-delay: 1s;
-  animation-iteration-count: infinite;
-}
+
 #satan-left{
   border: 3px dashed black;
   width: 170px;

@@ -83,7 +83,7 @@ $('.welcome button').on('click', function (event){
 $('#fight').on('click', function(event){
   event.preventDefault();
 
-$('#fight').addClass('animated wobble');
+$('#fight').toggleClass('animated wobble');
 $('.blood').fadeIn().addClass('animated flash');
 player.attack(monster)
 if (monster.health >0){
