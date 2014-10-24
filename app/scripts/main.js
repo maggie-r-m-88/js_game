@@ -83,17 +83,19 @@ $('.welcome button').on('click', function (event){
 $('#fight').on('click', function(event){
   event.preventDefault();
 
-$('#bad-guy').addClass('animated pulse');
+$('#fight').addClass('animated wobble');
 
 player.attack(monster)
 if (monster.health >0){
  $('.bbHealth').text(monster.health);
  $("#health-bar2").css({'width' : monster.health +"%"});
+
  if (monster.health < 30) {$("#health-bar2").css({'background-color' : "red"})}
 else if  (monster.health > 29 & monster.health < 75)    {$("#health-bar2").css({'background-color' : "orange"})}
 else if (monster.health > 74)
   {$("#health-bar2").css({'background-color' : "green"})}
  }
+
 else{
     $('.bbHealth').text('0');
     $('.bbName').css('text-decoration', 'line-through').css('color', 'black');
@@ -108,6 +110,7 @@ else{
  monster.attack(player)
  if (player.health >0){
   $('.ggHealth').text(player.health);
+
   $("#health-bar").css({'width' : player.health +"%"});
   if (player.health < 30) {$("#health-bar").css({'background-color' : "red"})}
  else if  (player.health > 29 & player.health < 75)    {$("#health-bar").css({'background-color' : "orange"})}
