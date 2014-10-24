@@ -86,6 +86,7 @@ $('#fight').on('click', function(event){
 player.attack(monster)
 if (monster.health >0){
  $('.bbHealth').text(monster.health);
+ $("#health-bar").css({'width' : monster.health +"%"});
  }
 else{
     $('.bbHealth').text('0');
@@ -100,6 +101,7 @@ else{
  monster.attack(player)
  if (player.health >0){
   $('.ggHealth').text(player.health);
+  $("#health-bar").css({'width' : player.health +"%"});
   }
  else{
      $('.ggHealth').text('0');

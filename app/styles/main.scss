@@ -76,14 +76,22 @@ body {
   margin-top: -460px;
   margin-left: 435px;
   .ggName{
-  margin-top: 2px;
+  margin-top: -7px;
   text-align: center;
-  border: 2px dashed gray;
+
 }
   .ggHealth{
     color: red;
-
-
+  }
+  .health-container{
+    height: 30px;
+    margin-top: -14px;
+    width: 295px;
+    background-color: white;
+  }
+  #health-bar{
+    background-color: red;
+    height: 30px;
   }
 }
 .bad-area{
@@ -94,17 +102,19 @@ body {
   position: absolute;
 .bbName{
   text-align: center;
-  margin-top: 2px;
-  border: 2px dashed gray;
+  margin-top: -7px;
 }
+  .health-container{
+    height: 30px;
+    margin-top: -14px;
+    width: 295px;
+    background-color: white;
+  }
+
 }
 #fight{
   position: absolute;
   border: 2px dashed red;
   margin-top: -100px;
   margin-left: 300px;
-  .bbName{
-  margin-top: -100px;
-  margin-left: 250px;
-  }
 }
