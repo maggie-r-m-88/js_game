@@ -86,12 +86,17 @@ $('#fight').on('click', function(event){
 player.attack(monster)
 if (monster.health >0){
  $('.bbHealth').text(monster.health);
- $("#health-bar").css({'width' : monster.health +"%"});
+ $("#health-bar2").css({'width' : monster.health +"%"});
+ if (monster.health < 30) {$("#health-bar2").css({'background-color' : "red"})}
+else if  (monster.health > 29 & monster.health < 75)    {$("#health-bar2").css({'background-color' : "orange"})}
+else if (monster.health > 74)
+  {$("#health-bar2").css({'background-color' : "green"})}
  }
 else{
     $('.bbHealth').text('0');
     $('.bbName').css('text-decoration', 'line-through').css('color', 'black');
     $('#fight').hide();
+    $("#health-bar2").css({'width' : "0px"});
     $('#game-over').css('display', 'block');
    $('.game-over-message').prepend("GAME OVER, " + monster.name + " , good has triumphed over evil.");
 
@@ -102,11 +107,16 @@ else{
  if (player.health >0){
   $('.ggHealth').text(player.health);
   $("#health-bar").css({'width' : player.health +"%"});
+  if (player.health < 30) {$("#health-bar").css({'background-color' : "red"})}
+ else if  (player.health > 29 & player.health < 75)    {$("#health-bar").css({'background-color' : "orange"})}
+ else if (player.health > 74)
+   {$("#health-bar").css({'background-color' : "green"})}
   }
  else{
      $('.ggHealth').text('0');
      $('.ggName').css('text-decoration', 'line-through').css('color', 'black');
      $('#fight').hide();
+     $("#health-bar").css({'width' : "0px"});
      $('#game-over').css('display', 'block');
      $('.game-over-message').prepend("GAME OVER, " + player.name + " , better luck next time.");
 

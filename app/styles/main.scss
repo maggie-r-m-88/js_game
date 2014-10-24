@@ -72,7 +72,7 @@ body {
 .good-area{
   position: absolute;
   width: 300px;
-  border: 3px solid red;
+
   margin-top: -460px;
   margin-left: 435px;
   .ggName{
@@ -90,7 +90,7 @@ body {
     background-color: white;
   }
   #health-bar{
-    background-color: red;
+    background-color: green;
     height: 30px;
   }
 }
@@ -98,7 +98,7 @@ body {
   margin-top: -460px;
   width: 300px;
   margin-left: 38px;
-  border: 3px solid red;
+
   position: absolute;
 .bbName{
   text-align: center;
@@ -109,6 +109,10 @@ body {
     margin-top: -14px;
     width: 295px;
     background-color: white;
+  }
+  #health-bar2{
+    height: 30px;
+    background-color: green;
   }
 
 }
