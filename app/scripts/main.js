@@ -17,7 +17,7 @@ var Enemy = function (name){
     break;
   };
   this.attack= function (attackee){
-      return attackee.health = attackee.health - _.random(2,10);
+      return attackee.health = attackee.health - _.random(1,2);
   };
   this.special= function (attackee){
     return attackee.health = attackee.health - _.random(10, 50);
@@ -45,7 +45,7 @@ var Good = function (options){
     break;
   };
   this.attack= function (attackee){
-    return attackee.health = attackee.health - _.random(2,10);
+    return attackee.health = attackee.health - _.random(1,2);
   };
   this.special= function (attackee){
     return attackee.health = attackee.health - _.random(10, 50);
@@ -84,16 +84,16 @@ $('#fight').on('click', function(event){
   event.preventDefault();
 
 $('#fight').addClass('animated wobble');
-
+$('.blood').fadeIn().addClass('animated flash');
 player.attack(monster)
 if (monster.health >0){
  $('.bbHealth').text(monster.health);
  $("#health-bar2").css({'width' : monster.health +"%"});
 
  if (monster.health < 30) {$("#health-bar2").css({'background-color' : "red"})}
-else if  (monster.health > 29 & monster.health < 75)    {$("#health-bar2").css({'background-color' : "orange"})}
+else if  (monster.health > 29 & monster.health < 75)    {$("#health-bar2").css({'background-color' : "rgb(237,255,88)"})}
 else if (monster.health > 74)
-  {$("#health-bar2").css({'background-color' : "green"})}
+  {$("#health-bar2").css({'background-color' : "rgb(129,212,101)"})}
  }
 
 else{
@@ -102,7 +102,7 @@ else{
     $('#fight').hide();
     $("#health-bar2").css({'width' : "0px"});
     $('#game-over').fadeIn();
-   $('.game-over-message').prepend("GAME OVER, " + monster.name + " , good has triumphed over evil.");
+   $('.game-over-message').prepend("GAME OVER, " + monster.name + "  ...good has triumphed over evil!");
 
 
   }
@@ -113,9 +113,9 @@ else{
 
   $("#health-bar").css({'width' : player.health +"%"});
   if (player.health < 30) {$("#health-bar").css({'background-color' : "red"})}
- else if  (player.health > 29 & player.health < 75)    {$("#health-bar").css({'background-color' : "orange"})}
+ else if  (player.health > 29 & player.health < 75)    {$("#health-bar").css({'background-color' : "rgb(237,255,88)"})}
  else if (player.health > 74)
-   {$("#health-bar").css({'background-color' : "green"})}
+   {$("#health-bar").css({'background-color' : "rgb(129,212,101)"})}
   }
  else{
      $('.ggHealth').text('0');
@@ -123,7 +123,7 @@ else{
      $('#fight').hide();
      $("#health-bar").css({'width' : "0px"});
       $('#game-over').fadeIn();
-     $('.game-over-message').prepend("GAME OVER, " + player.name + " , better luck next time.");
+     $('.game-over-message').prepend("GAME OVER, " + player.name + "  ...better luck next time.");
 
 
    }
