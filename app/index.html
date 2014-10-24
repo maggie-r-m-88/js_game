@@ -14,6 +14,8 @@
     <!-- endbuild -->
 
     <!-- build:css styles/main.css -->
+    <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah|Exo:400,700,900|Righteous' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="animate.css">
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
 
@@ -22,13 +24,25 @@
     <!-- endbuild -->
   </head>
   <body>
+<div class="body-container">
 
 <div class="hero-unit">
     <div class="welcome">
       <h3>Choose your Character</h3>
-      <button name="1">Martin Luther King</button>
+      <ul class="characters">
+        <li>
+        <img src="/images/mlk2.gif" /><br>
+        <button name="1">MLK Jr.</button>
+        </li>
+        <li>
+        <img src="/images/gandhi-gif.gif" /> <br>
       <button name="2">Ghandi</button>
+        </li>
+        <li>
+          <img src="/images/jc.gif" width="158px" height="182px" /><br>
       <button name="3">Jesus</button>
+        </li>
+      </ul>
     </div>
     <div class="fight">
         <div class="arena"></div><!--arena shows here-->
@@ -37,12 +51,18 @@
           <div class="health-container">
             <div id="health-bar"></div>
           </div>
-        </div>
+        </div><!--end good bar-->
         <div class="bad-area">
           <p class ="bbName"> <span class="bbHealth"></span></p>
           <div class="health-container">
             <div id="health-bar2"></div>
-          </div>
+          </div><!--end bad bar-->
+
+        <div id="bad-guy">
+          <img src="/images/satan.gif" />
+        </div>
+
+
         </div>
         <button id="fight">attack <!--fix this later<span class="bbName"></span>--></button>
     </div>
@@ -52,8 +72,8 @@
           <div class="game-over-message"></div>
         </div>
     </div>
-<div><!--end of hero-unit-->
-
+</div><!--end of hero-unit-->
+</div><!--end of body container-->
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>

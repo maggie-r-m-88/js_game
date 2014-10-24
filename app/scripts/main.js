@@ -79,9 +79,11 @@ $('.welcome button').on('click', function (event){
 });
 
 
+
 $('#fight').on('click', function(event){
   event.preventDefault();
 
+$('#bad-guy').addClass('animated pulse');
 
 player.attack(monster)
 if (monster.health >0){
@@ -97,7 +99,7 @@ else{
     $('.bbName').css('text-decoration', 'line-through').css('color', 'black');
     $('#fight').hide();
     $("#health-bar2").css({'width' : "0px"});
-    $('#game-over').css('display', 'block');
+    $('#game-over').fadeIn();
    $('.game-over-message').prepend("GAME OVER, " + monster.name + " , good has triumphed over evil.");
 
 
@@ -117,7 +119,7 @@ else{
      $('.ggName').css('text-decoration', 'line-through').css('color', 'black');
      $('#fight').hide();
      $("#health-bar").css({'width' : "0px"});
-     $('#game-over').css('display', 'block');
+      $('#game-over').fadeIn();
      $('.game-over-message').prepend("GAME OVER, " + player.name + " , better luck next time.");
 
 
