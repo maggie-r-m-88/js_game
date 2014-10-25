@@ -284,3 +284,22 @@ body {
   width: 170px;
   margin-left: 300px;
 }
+.round{
+  width: 158px;
+  margin-top: 10px;
+  height: 50px;
+  padding-top: -15px;
+  font-weight: bold;
+  font-size: 25px;
+  border-radius: 5px;
+  background-color: hsla(199, 17%, 83%, 1);
+  font-family: $mainfont;
+  a{
+    text-decoration: none;
+    color: black;
+    margin-top: -20px;
+  }
+  &:hover{
+    background-color: hsla(0, 0%, 98%, 1);
+  }
+}
