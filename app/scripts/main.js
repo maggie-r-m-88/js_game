@@ -17,7 +17,7 @@ var Enemy = function (name){
     break;
   };
   this.attack= function (attackee){
-      return attackee.health = attackee.health - _.random(2,6);
+      return attackee.health = attackee.health - _.random(2,8);
   };
   this.special= function (attackee){
     return attackee.health = attackee.health - _.random(10, 50);
@@ -45,7 +45,7 @@ var Good = function (options){
     break;
   };
   this.attack= function (attackee){
-    return attackee.health = attackee.health - _.random(2,5);
+    return attackee.health = attackee.health - _.random(2,8);
   };
   this.special= function (attackee){
     return attackee.health = attackee.health - _.random(10, 50);
@@ -55,7 +55,7 @@ var Good = function (options){
 
 var player,
  monster;
-$('.welcome p').addClass('animated zoomIn');
+$('.welcome h2').addClass('animated zoomIn');
 $('.welcome h3').addClass('animated zoomIn');
 $('.welcome li').addClass('animated zoomIn');
 
@@ -98,7 +98,7 @@ if (monster.health >0){
  if (monster.health < 30) {$("#health-bar2").css({'background-color' : "red"})}
 else if  (monster.health > 29 & monster.health < 75)    {$("#health-bar2").css({'background-color' : "rgb(237,255,88)"})}
 else if (monster.health > 74)
-  {$("#health-bar2").css({'background-color' : "rgb(129,212,101)"})}
+  {$("#health-bar2").css({'background-color' : "hsla(85, 100%, 50%, 1)"})}
  }
 
 else{
@@ -107,7 +107,7 @@ else{
     $('#fight').hide();
     $("#health-bar2").css({'width' : "0px"});
     $('#game-over').fadeIn();
-   $('.game-over-message').prepend("GAME OVER, " + monster.name + "  ...good has triumphed over evil!");
+   $('.game-over-message').prepend("GAME OVER, " + "...good has triumphed over evil!");
 
 
   }
@@ -120,7 +120,7 @@ else{
   if (player.health < 30) {$("#health-bar").css({'background-color' : "red"})}
  else if  (player.health > 29 & player.health < 75)    {$("#health-bar").css({'background-color' : "rgb(237,255,88)"})}
  else if (player.health > 74)
-   {$("#health-bar").css({'background-color' : "rgb(129,212,101)"})}
+   {$("#health-bar").css({'background-color' : "hsla(85, 100%, 50%, 1)"})}
   }
  else{
      $('.ggHealth').text('0');
