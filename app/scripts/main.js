@@ -55,6 +55,11 @@ var Good = function (options){
 
 var player,
  monster;
+$('.welcome p').addClass('animated zoomIn');
+$('.welcome h3').addClass('animated zoomIn');
+$('.welcome li').addClass('animated zoomIn');
+
+
 $('.welcome button').on('click', function (event){
 
   event.preventDefault();
@@ -84,7 +89,7 @@ $('#fight').on('click', function(event){
   event.preventDefault();
 
 $('#fight').toggleClass('animated wobble');
-$('.blood').fadeIn().addClass('animated flash');
+
 player.attack(monster)
 if (monster.health >0){
  $('.bbHealth').text(monster.health);

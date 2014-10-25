@@ -31,6 +31,9 @@ body {
   border-radius: 30px;
   padding: 60px;
   h3 {
+    animation-duration: 2.5s;
+    animation-delay: 1.8s;
+    animation-iteration-count: 1;
     font-size: 40px;
     line-height: 1;
     color: black;
@@ -45,11 +48,14 @@ body {
     font-family: $mainfont;
   }
   p{
+    animation-duration: 1.4s;
+    animation-delay: 0.3s;
+    animation-iteration-count: 1;
     font-size: 60px;
     margin-left: 51x;
     font-family: $headfont;
     background-color: black;
-    color: white;
+    color: rgb(184,214,68);
     height: 90px;
     margin-top: 10px;
     width: 100%;
@@ -60,6 +66,7 @@ body {
   }
   span{
     margin-left: 50px;
+    color: white;
     font-family: $headfont;
 
   }
@@ -68,10 +75,14 @@ body {
 .characters{
   list-style-type: none;
   display: inline;
+  margin-left: 20px;
   li{
     display: inline-block;
-    padding: 30px;
+    padding: 35px;
     border-radius: 30px;
+  animation-duration: 2.5s;
+  animation-delay: 2.1s;
+  animation-iteration-count: 1;
   }
   button:hover{
     background-color: hsla(0, 0%, 98%, 1);
