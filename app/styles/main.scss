@@ -5,7 +5,7 @@
 // Custom Styles
 //font-family: 'Gloria Hallelujah', cursive;
 $mainfont: 'Exo', sans-serif;
-//font-family: 'Righteous', cursive;
+$headfont: 'Righteous', cursive;
 body {
 
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -31,7 +31,7 @@ body {
   border-radius: 30px;
   padding: 60px;
   h3 {
-    font-size: 50px;
+    font-size: 40px;
     line-height: 1;
     color: black;
     text-align: center;
@@ -43,6 +43,16 @@ body {
     border-radius: 0.5px;
     background-color: rgb(225,231,234);
     font-family: $mainfont;
+  }
+  p{
+    font-size: 60px;
+    font-family: $mainfont;
+    font-weight: bold;
+  }
+  span{
+    margin-left: 50px;
+    font-family: $headfont;
+
   }
 }
 
