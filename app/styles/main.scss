@@ -14,7 +14,6 @@ body {
   font-family: "Adobe Caslon Pro", Georgia, serif;
   font-size: 62.5%;
 
-
 }
 .body-container{
   background-color: black;
@@ -23,7 +22,7 @@ body {
 .hero-unit {
   position: relative;
   margin: 50px auto 0 auto;
-  width: 900px;
+  width: 80%;
   background-color: rgb(239,239,239);
   font-size: 18px;
   font-weight: 200;
@@ -41,6 +40,8 @@ body {
   }
   button{
     width: 158px;
+    border-radius: 0.5px;
+    background-color: rgb(225,231,234);
     font-family: $mainfont;
   }
 }
@@ -53,7 +54,7 @@ body {
     padding: 30px;
     border-radius: 30px;
   }
-  li:hover{
+  button:hover{
     background-color: hsla(0, 0%, 98%, 1);
   }
 
@@ -73,6 +74,9 @@ body {
   font-size: 55px;
   color: white;
   width: 702px;
+  animation-duration: 1.4s;
+  animation-delay: 0.3s;
+  animation-iteration-count: 1;
   margin-left: 39px;
   height: 400px;
   display: none;
@@ -92,6 +96,7 @@ body {
 
 }
 .game-over-message{
+
   font-color: white;
   font-size: 45px;
   background-color: black;

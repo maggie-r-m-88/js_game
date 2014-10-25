@@ -17,7 +17,7 @@ var Enemy = function (name){
     break;
   };
   this.attack= function (attackee){
-      return attackee.health = attackee.health - _.random(1,2);
+      return attackee.health = attackee.health - _.random(2,6);
   };
   this.special= function (attackee){
     return attackee.health = attackee.health - _.random(10, 50);
@@ -45,7 +45,7 @@ var Good = function (options){
     break;
   };
   this.attack= function (attackee){
-    return attackee.health = attackee.health - _.random(1,2);
+    return attackee.health = attackee.health - _.random(2,5);
   };
   this.special= function (attackee){
     return attackee.health = attackee.health - _.random(10, 50);
@@ -123,6 +123,7 @@ else{
      $('#fight').hide();
      $("#health-bar").css({'width' : "0px"});
       $('#game-over').fadeIn();
+      $('.game-over-message').fadeIn();
      $('.game-over-message').prepend("GAME OVER, " + player.name + "  ...better luck next time.");
 
 
