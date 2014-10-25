@@ -316,3 +316,18 @@ body {
 .body-container2{
   background-color: hsla(321, 100%, 50%, 1);
 }
+#fight2{
+  animation-duration: 0.8s;
+  animation-delay: 0.4s;
+  animation-iteration-count: infinite;
+  position: absolute;
+  font-weight: bold;
+  height: 310px;
+  width: 272px;
+  border-radius: 20px;
+  
+  background-image: url("/images/reilly.gif");
+  background-size: cover;
+  margin-top: 50px;
+  margin-left: 190px;
+}

@@ -73,7 +73,7 @@ $('.welcome2 button').on('click', function (event){
 
     });
 //create instance of bad guy
-   monster = new Enemy('Satan');
+   monster = new Enemy("Bill O'Reilly");
 
     $('.welcome2').fadeOut(800,function (){
 
@@ -87,10 +87,10 @@ $('.welcome2 button').on('click', function (event){
 
 
 
-$('#fight').on('click', function(event){
+$('#fight2').on('click', function(event){
   event.preventDefault();
 
-$('#fight').toggleClass('animated wobble');
+$('#fight2').toggleClass('animated wobble');
 
 player.attack(monster)
 if (monster.health >0){
@@ -106,10 +106,10 @@ else if (monster.health > 74)
 else{
     $('.bbHealth').text('0');
     $('.bbName').css('text-decoration', 'line-through').css('color', 'black');
-    $('#fight').hide();
+    $('#fight2').hide();
     $("#health-bar2").css({'width' : "0px"});
     $('#game-over').fadeIn();
-   $('.game-over-message').prepend("YOU WIN! " + "...good has triumphed over evil!");
+   $('.game-over-message').prepend("YOU WIN! " + "..thanks for playing!");
 
 
   }
@@ -127,7 +127,7 @@ else{
  else{
      $('.ggHealth').text('0');
      $('.ggName').css('text-decoration', 'line-through').css('color', 'black');
-     $('#fight').hide();
+     $('#fight2').hide();
      $("#health-bar").css({'width' : "0px"});
       $('#game-over').fadeIn();
       $('.game-over-message').fadeIn();
