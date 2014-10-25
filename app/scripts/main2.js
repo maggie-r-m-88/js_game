@@ -55,15 +55,14 @@ var Good = function (options){
 
 var player,
  monster;
-$('.welcome h2').addClass('animated bounceInDown');
-$('.halo').addClass('animated bounceInDown');
-$('.horns').addClass('animated bounceInDown');
-$('.welcome h3').addClass('animated zoomIn');
-$('.welcome li').addClass('animated zoomIn');
+$('.welcome2 h2').addClass('animated bounceInDown');
+
+$('.welcome2 h3').addClass('animated zoomIn');
+$('.welcome2 li').addClass('animated zoomIn');
 
 
 
-$('.welcome button').on('click', function (event){
+$('.welcome2 button').on('click', function (event){
 
   event.preventDefault();
 
@@ -76,7 +75,7 @@ $('.welcome button').on('click', function (event){
 //create instance of bad guy
    monster = new Enemy('Satan');
 
-    $('.welcome').fadeOut(800,function (){
+    $('.welcome2').fadeOut(800,function (){
 
     $('.ggName').prepend(player.name).find('.ggHealth').text(player.health);
     $('.bbName').prepend(monster.name).find('.bbHealth').text(player.health);

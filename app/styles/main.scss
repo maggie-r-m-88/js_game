@@ -3,7 +3,7 @@
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
 
 // Custom Styles
-//font-family: 'Gloria Hallelujah', cursive;
+$newfont: 'Gloria Hallelujah', cursive;
 $mainfont: 'Exo', sans-serif;
 $headfont: 'Righteous', cursive;
 body {
@@ -302,4 +302,17 @@ body {
   &:hover{
     background-color: hsla(0, 0%, 98%, 1);
   }
+}
+
+.welcome2 h2{
+  font-family: $newfont;
+  color: hsla(321, 100%, 50%, 1);
+  font-size: 45px;
+  span{
+  font-family: $newfont;
+  margin-left: -10px;
+  }
+}
+.body-container2{
+  background-color: hsla(321, 100%, 50%, 1);
 }
