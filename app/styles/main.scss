@@ -46,7 +46,16 @@ body {
   }
   p{
     font-size: 60px;
-    font-family: $mainfont;
+    margin-left: 51x;
+    font-family: $headfont;
+    background-color: black;
+    color: white;
+    height: 90px;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 30px;
+    padding-top: 30px;
+    padding-left: 70px;
     font-weight: bold;
   }
   span{
