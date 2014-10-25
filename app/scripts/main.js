@@ -55,9 +55,12 @@ var Good = function (options){
 
 var player,
  monster;
-$('.welcome h2').addClass('animated zoomIn');
+$('.welcome h2').addClass('animated bounceInDown');
+$('.halo').addClass('animated bounceInDown');
+$('.horns').addClass('animated bounceInDown');
 $('.welcome h3').addClass('animated zoomIn');
 $('.welcome li').addClass('animated zoomIn');
+
 
 
 $('.welcome button').on('click', function (event){
@@ -73,7 +76,7 @@ $('.welcome button').on('click', function (event){
 //create instance of bad guy
    monster = new Enemy('Satan');
 
-    $('.welcome').fadeOut(500,function (){
+    $('.welcome').fadeOut(800,function (){
 
     $('.ggName').prepend(player.name).find('.ggHealth').text(player.health);
     $('.bbName').prepend(monster.name).find('.bbHealth').text(player.health);
@@ -107,7 +110,7 @@ else{
     $('#fight').hide();
     $("#health-bar2").css({'width' : "0px"});
     $('#game-over').fadeIn();
-   $('.game-over-message').prepend("GAME OVER, " + "...good has triumphed over evil!");
+   $('.game-over-message').prepend("YOU WIN! " + "...good has triumphed over evil!");
 
 
   }
