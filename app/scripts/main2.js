@@ -17,7 +17,7 @@ var Enemy = function (name){
     break;
   };
   this.attack= function (attackee){
-      return attackee.health = attackee.health - _.random(2,8);
+      return attackee.health = attackee.health - _.random(2,7);
   };
   this.special= function (attackee){
     return attackee.health = attackee.health - _.random(10, 50);
@@ -110,7 +110,7 @@ else{
     $("#health-bar2").css({'width' : "0px"});
     $('#game-over').fadeIn();
    $('.game-over-message').prepend("YOU WIN! " + "..thanks for playing!");
-
+  $('.beyonce').fadeIn();
 
   }
 

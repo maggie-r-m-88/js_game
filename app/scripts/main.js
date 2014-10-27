@@ -92,7 +92,7 @@ $('#fight').on('click', function(event){
   event.preventDefault();
 
 $('#fight').toggleClass('animated wobble');
-
+$('.arena').toggleClass('animated shake');
 player.attack(monster)
 if (monster.health >0){
  $('.bbHealth').text(monster.health);
@@ -109,9 +109,10 @@ else{
     $('.bbName').css('text-decoration', 'line-through').css('color', 'black');
     $('#fight').hide();
     $("#health-bar2").css({'width' : "0px"});
+
     $('#game-over').fadeIn();
    $('.game-over-message').prepend("YOU WIN! " + "...good has triumphed over evil!");
-
+   $('.beyonce').fadeIn();
 
   }
 
@@ -130,6 +131,7 @@ else{
      $('.ggName').css('text-decoration', 'line-through').css('color', 'black');
      $('#fight').hide();
      $("#health-bar").css({'width' : "0px"});
+
       $('#game-over').fadeIn();
       $('.game-over-message').fadeIn();
      $('.game-over-message').prepend("GAME OVER, " + player.name + "  ...better luck next time.");
